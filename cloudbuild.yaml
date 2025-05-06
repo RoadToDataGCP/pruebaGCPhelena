@@ -1,3 +1,4 @@
+logsBucket: gs://pruebagcphelena
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/r2d-interno-dev/pruebagcphelena:v1.2-$COMMIT_SHA', './pruebagcphelena']
