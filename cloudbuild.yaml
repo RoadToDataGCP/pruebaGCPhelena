@@ -1,4 +1,3 @@
-logsBucket: 'gs://pruebagcphelena/log_exports'
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/r2d-interno-dev/pruebagcphelena:v1.2-$COMMIT_SHA', './pruebagcphelena']
@@ -10,3 +9,5 @@ steps:
 
 images:
   - 'gcr.io/r2d-interno-dev/pruebagcphelena:v1.2-$COMMIT_SHA'
+
+logsBucket: 'gs://pruebagcphelena/log_exports'
